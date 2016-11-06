@@ -6,6 +6,22 @@
   <script src="//d3js.org/d3.v4.min.js"></script>
 </head>
 <body>
+    <h1><u>Example for Linearscale</u> </h1>
+
+    <code>
+    var linearScale = d3.scaleLinear()
+  .domain([0, 100])
+  .range([0, 600])
+  .clamp(true);
+
+console.log(linearScale(-20));
+        console.log(linearScale(50));
+console.log(linearScale(105));
+
+console.log(linearScale.invert(300));<br>
+
+    </code>
+
   <script src="src/app.js"></script>
 </body>
 </html>
