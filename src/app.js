@@ -6,5 +6,5 @@ d3.select('.title')
     .style('display', 'block')
     .text('submit');
 d3.select('body')
-    .insert('h1','.title')
+    .insert('h1','.title') // second argument is css selector and inserts before the element selected.
         .text('D3.js DOM element creation and insertion');
